@@ -4,4 +4,75 @@
 
 body {
 	margin: 0;
+	font-family: sans-serif;
+}
+
+header {
+	background-color: #fbfbfb;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.accentColour{
+	color: #0aa39c;
+}
+
+.intro {
+	display: flex;
+	justify-content: center;
+}
+
+header h2 {
+	font-weight: 200;
+	color: #808080;
+	overflow: hidden; 
+	border-right: .15em solid orange;
+	white-space: nowrap; 
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret 0.5s step-end infinite;
+}
+
+header a {
+	margin-top: 20px;
+	border: 3px #0aa39c solid;
+	border-radius: 3px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+header a:hover{
+	background-color: #0aa39c;
+	color: #fbfbfb;
+	transition: 0.5s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 645px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+@media screen and (max-width: 650px) {
+	header h2 {
+		font-size: 14px;
+	}
+	
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 375px }
+	}
+	
 }
