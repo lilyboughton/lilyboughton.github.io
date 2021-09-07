@@ -8,6 +8,8 @@ body {
 	
 }
 
+/************** HEADER SECTION **************/
+
 header {
 	background-color: #fbfbfb;
 	height: 100vh;
@@ -65,6 +67,8 @@ header a:hover{
   50% { border-color: #FFA500; }
 }
 
+/************** NAV BAR **************/
+
 nav {
 	position: sticky;
 	top: 0px;
@@ -74,6 +78,7 @@ nav {
 	align-items: center;
 	background-color: #0aa39c;
 	border-bottom: 3px solid #FFA500;
+	z-index: 2;
 }
 
 nav a {
@@ -91,6 +96,8 @@ nav a:hover{
 .mobileNav {
 	display: none;
 }
+
+/************** ABOUT ME **************/
 
 main {
 	padding: 10px;
@@ -119,11 +126,16 @@ h4 {
 	background-color: #0aa39c;
 }
 
+.lightTheme {
+	back-ground-color: #fbfbfb;
+}
+
 .profilePic {
 	border-radius: 50%;
 	height: 250px;
 	padding: 20px;
 }
+
 p{
 	font-weight: 300;
 }
@@ -132,12 +144,130 @@ p a {
 	color: #fbfbfb;
 }
 
+/************** PORTFOLIO SECTION **************/
+
+#portfolio {
+	padding: 20px;
+}
+
+#portfolio p {
+	text-align:center;
+	margin-top: 40px;
+}
+
+.portfolioProject {
+	width: 275px;
+	height: 200px;
+	margin: 10px;
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.projectOne{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectOne.jpeg");
+}
+
+.projectTwo{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectTwo.jpg");
+}
+.projectThree{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectThree.jpg");
+}
+
+.projectFour{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectFour.jpg");
+}
+
+.projectFive{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectFive.jpg");
+}
+.projectSix{
+	background-image: linear-gradient(
+		rgba(251,251,251,0.6),
+		rgba(251,251,251,0.6)
+		), 
+		url("Images/projectSix.jpg");
+}
+
+.findOutMore {
+	background-color: #0aa39c;
+	border: 3px solid #0aa39c;
+	color: #fbfbfb;
+	border-radius: 3px;
+	padding: 5px 10px;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.findOutMore:hover{
+	border: 3px solid #FFA500;
+	transition: 0.5s;
+}
+
+.portfolioProject h4 {
+	text-transform: uppercase;
+	font-family: 'Courier New';
+	font-weight: 600;
+}
+
+.projectLinks {
+	display: flex;
+}
+
+.projectLinks div{
+	padding:10px;
+}
+
+.projectLinks a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
+.projectLinks a:hover {
+	color: #FFA500;
+}
+
+i {
+	font-size: 18px;
+	padding: 5px;
+}
+
+/************** FOOTER SECTION **************/
+
 footer {
 	background-color: #0aa39c;
 	color: #fbfbfb;
 	text-align: right;
 	padding: 5px 15px;
 }
+
+/************** MEDIA QUERIES **************/
+
 
 @media screen and (max-width: 650px) {
 	header h2 {
@@ -163,6 +293,9 @@ footer {
 	
 	section {
 		flex-flow: column wrap;
+	}
+	.getsHidden {
+		display: none;
 	}
 	
 }
