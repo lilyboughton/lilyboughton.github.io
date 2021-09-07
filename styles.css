@@ -4,6 +4,7 @@
 
 body {
 	font-family: sans-serif;
+	letter-spacing: .075em;
 	
 }
 
@@ -76,18 +77,14 @@ nav {
 
 nav a {
 	text-decoration: none;
-	padding: 5px 50px;
+	margin: 5px 50px;
 	color: #fbfbfb;
 	border: 3px solid #0aa39c;
 }
 
 nav a:hover{
-	border: 3px solid #fbfbfb;
+	border-bottom: 3px solid #fbfbfb;
 	transition: 0.5s;
-}
-
-nav a:selection {
-	border: 3px solid #fbfbfb;
 }
 
 .mobileNav {
@@ -96,7 +93,6 @@ nav a:selection {
 
 article {
 	height: 1000px;
-	z-index: -2;
 }
 
 footer {
