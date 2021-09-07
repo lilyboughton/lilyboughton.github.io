@@ -73,6 +73,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	background-color: #0aa39c;
+	border-bottom: 3px solid #FFA500;
 }
 
 nav a {
@@ -91,8 +92,41 @@ nav a:hover{
 	display: none;
 }
 
-article {
-	height: 1000px;
+main {
+	padding: 10px;
+}
+
+section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h3 {
+	text-align:center;
+	font-family: 'Courier New';
+}
+
+h4 {
+	font-weight: 300;
+}
+
+
+.darkTheme {
+	color: #fbfbfb;
+	background-color: #0aa39c;
+}
+
+.profilePic {
+	border-radius: 50%;
+	height: 250px;
+	padding: 20px;
+}
+
+p a {
+	color: #fbfbfb;
 }
 
 footer {
