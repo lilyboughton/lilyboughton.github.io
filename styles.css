@@ -4,6 +4,8 @@
 
 body {
 	font-family: sans-serif;
+	letter-spacing: .075em;
+	
 }
 
 header {
@@ -63,6 +65,35 @@ header a:hover{
   50% { border-color: #FFA500; }
 }
 
+nav {
+	position: sticky;
+	top: 0px;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0aa39c;
+}
+
+nav a {
+	text-decoration: none;
+	margin: 5px 50px;
+	color: #fbfbfb;
+	border: 3px solid #0aa39c;
+}
+
+nav a:hover{
+	border-bottom: 3px solid #fbfbfb;
+	transition: 0.5s;
+}
+
+.mobileNav {
+	display: none;
+}
+
+article {
+	height: 1000px;
+}
 
 footer {
 	background-color: #0aa39c;
@@ -79,6 +110,18 @@ footer {
 	@keyframes typing {
 	  from { width: 0 }
 	  to { width: 375px }
+	}
+	
+	.mobileNav {
+		display: block;
+		padding: 10px 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.largeNav {
+		display:none;
 	}
 	
 }
