@@ -158,4 +158,8 @@ footer {
 		display:none;
 	}
 	
+	section {
+		flex-flow: column wrap;
+	}
+	
 }
