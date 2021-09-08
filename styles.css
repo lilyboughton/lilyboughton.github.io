@@ -260,19 +260,16 @@ i {
 
 /************** CONTACT SECTION **************/
 
-#contact {
+.contactSection {
 	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
 }
 
-#contact p {
-	width: 600px;
-	margin: 0 auto;
-	padding: 20px 0;
-}
-
-#contact section {
-	width: 70%;
-	margin: 0 auto;
+.contactSection p {
+	padding: 20px;
+	text-align: center;
 }
 
 .contactLinks {
@@ -285,7 +282,7 @@ i {
 }
 
 .contactLinks i {
-	font-size: 100px;
+	font-size: 80px;
 	padding: 20px;
 }
 
@@ -293,8 +290,14 @@ i {
 	color: #FFA500;
 }
 
+.flexMoji {
+	display: flex;
+	justify-content: center;
+}
+
 .bitEmoji {
-	height: 300px;
+	height: 200px;
+	
 }
 
 
