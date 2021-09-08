@@ -258,6 +258,45 @@ i {
 	padding: 5px;
 }
 
+/************** CONTACT SECTION **************/
+
+#contact {
+	padding: 20px;
+}
+
+#contact p {
+	width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#contact section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.contactLinks {
+	display: flex;
+	justify-content: center;
+}
+
+.contactLinks a{
+	color: #fbfbfb;
+}
+
+.contactLinks i {
+	font-size: 100px;
+	padding: 20px;
+}
+
+.contactLinks a:hover{
+	color: #FFA500;
+}
+
+.bitEmoji {
+	height: 300px;
+}
+
 
 /************** FOOTER SECTION **************/
 
