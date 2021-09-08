@@ -258,6 +258,48 @@ i {
 	padding: 5px;
 }
 
+/************** CONTACT SECTION **************/
+
+.contactSection {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+}
+
+.contactSection p {
+	padding: 20px;
+	text-align: center;
+}
+
+.contactLinks {
+	display: flex;
+	justify-content: center;
+}
+
+.contactLinks a{
+	color: #fbfbfb;
+}
+
+.contactLinks i {
+	font-size: 80px;
+	padding: 20px;
+}
+
+.contactLinks a:hover{
+	color: #FFA500;
+}
+
+.flexMoji {
+	display: flex;
+	justify-content: center;
+}
+
+.bitEmoji {
+	height: 200px;
+	
+}
+
 
 /************** FOOTER SECTION **************/
 
@@ -300,9 +342,4 @@ footer {
 	.getsHidden {
 		display: none;
 	}
-	
-	#contact p{
-		width: 80%;
-	}
-	
 }
