@@ -111,6 +111,7 @@ section {
 	margin: 0 auto;
 }
 
+
 h3 {
 	text-align:center;
 	font-family: 'Courier New';
@@ -133,7 +134,7 @@ h4 {
 .profilePic {
 	border-radius: 50%;
 	height: 250px;
-	padding: 20px;
+	padding: 20px 100px;
 }
 
 p{
@@ -257,6 +258,7 @@ i {
 	padding: 5px;
 }
 
+
 /************** FOOTER SECTION **************/
 
 footer {
@@ -294,8 +296,13 @@ footer {
 	section {
 		flex-flow: column wrap;
 	}
+	
 	.getsHidden {
 		display: none;
+	}
+	
+	#contact p{
+		width: 80%;
 	}
 	
 }
