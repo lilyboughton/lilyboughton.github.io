@@ -75,10 +75,8 @@ nav {
 	padding: 10px 15px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	background-color: #0aa39c;
 	border-bottom: 3px solid #FFA500;
-	z-index: 2;
 }
 
 nav a {
@@ -243,10 +241,11 @@ p a {
 }
 
 .projectLinks a {
-	display: block;
 	text-align: center;
 	text-decoration: none;
 	color: #000;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .projectLinks a:hover {
@@ -258,13 +257,11 @@ i {
 	padding: 5px;
 }
 
+
 /************** CONTACT SECTION **************/
 
 .contactSection {
 	padding: 20px;
-	display: flex;
-	justify-content: center;
-	flex-flow: column wrap;
 }
 
 .contactSection p {
@@ -296,8 +293,7 @@ i {
 }
 
 .bitEmoji {
-	height: 200px;
-	
+	height: 200px;	
 }
 
 
