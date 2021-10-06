@@ -269,6 +269,14 @@ i {
 	text-align: center;
 }
 
+.myLinks {
+	text-decoration: none;
+}
+
+.myLinks:hover {
+	color: #FFA500;
+}
+
 .contactLinks {
 	display: flex;
 	justify-content: center;
