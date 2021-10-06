@@ -126,7 +126,7 @@ h4 {
 }
 
 .lightTheme {
-	back-ground-color: #fbfbfb;
+	background-color: #fbfbfb;
 }
 
 .profilePic {
@@ -320,17 +320,71 @@ footer {
 	}
 	
 	.mobileNav {
+		border: none;
 		display: block;
-		padding: 10px 15px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		background-color: #0aa39c;
+		z-index: 1;
+		margin: 0;
 	}
-	
+
+	.mobileNavOpen {
+		background-color: rgba(251,251,251,0.95);
+		padding: 10px 15px;
+		border: none;
+		display: block;
+		z-index: 1;
+		height: 150px;
+	}
+
+	.hamburgerMenu2{
+		display: none;
+	}
+
+	.hamburgerMenu1 {
+		display: block;
+		position: absolute;
+	}
+
+	.hamburgerMenu1 a{
+		display: block;
+		border: none;
+		color: #0aa39c;
+		padding-bottom: 8px;
+		transition: 0.1s;
+	}
+
+	.hamburgerMenu1 a:hover {
+		border: none;
+		color: #FFA500;
+	}
+
+	.hamburgerButtonClosed {
+		color: #fbfbfb;
+		background-color: #0aa39c;
+		border: none;
+		transition: 0.1s;
+	}
+	.hamburgerButtonClosed:hover {
+		color: rgba(251,251,251,0.7);
+		background-color: rgba(10, 163, 156,0.7);
+	}
+
+	.hamburgerButtonOpen {
+		color: #0aa39c;
+		background-color: transparent;
+		border: none;
+		transition: 0.3s;
+	}
+
+	.hamburgerButtonOpen:hover {
+		background-color: #FFA500;
+		color: #fbfbfb;
+	}
+
 	.largeNav {
 		display:none;
 	}
-	
+
 	section {
 		flex-flow: column wrap;
 	}
@@ -338,4 +392,5 @@ footer {
 	.getsHidden {
 		display: none;
 	}
+
 }

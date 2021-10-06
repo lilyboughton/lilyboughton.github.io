@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="normalize.css" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles.css" type="text/css">
+		<script defer src="index.js"></script>
 	</head>
 	<body>
 		
@@ -20,8 +21,13 @@
 			<a href="#portfolio">Portfolio</a>
 			<a href="#contact">Contact</a>
 		</nav>
-		<nav class="mobileNav">
-			<a href="#">Menu</a> 
+		<nav id="mobileNav" class="mobileNav">
+			<button id="hamburgerButton" class="hamburgerButtonClosed"><i class="fa fa-bars"></i></button>
+			<div id="hamburgerMenu" class="hamburgerMenu2">
+				<a class="hamburgerLink" href="#about">About</a>
+				<a class="hamburgerLink" href="#portfolio">Portfolio</a>
+				<a class="hamburgerLink" href="#contact">Contact</a>
+			</div>
 		</nav>
 		
 		<main id="about" class="darkTheme">
@@ -33,7 +39,7 @@
 				<article>
 					<h4>I'm a 'work in progress' hoping to learn the skills to make me an awesome programmer.</h4>
 					<p>I'm Lily. I'm currently studying at <a href="https://io-academy.uk/" target="_blank">iO Academy</a> with the aim to launch a new career in the Coding Community. I've tried my hand at a few things in my working life so far, in each iteration trying to incorporate as much coding as possible!</p>
-					<p>When I'm not bashing away on my keyboard, you can find me out walking my dog, Hendrix, getting creative at my sewing machine or hanging out with my 3 year old nephew.</p>
+					<p>When I'm not bashing away on my keyboard, you can find me out walking my dog, Hendrix, getting creative at my sewing machine or hanging out with my 3-year-old nephew.</p>
 				</article>
 			</section>
 		</main>
@@ -121,9 +127,9 @@
 		<div id="contact" class="darkTheme contactSection">
 			<h3>&ltcontact&gt</h3>
 			<div class="flexMoji">
-				<img src="Images/mailEmoji.png" alt="Bitmoji image" class="bitEmoji" />
+				<img src="Images/mailEmoji.png" alt="Lily jumping out of an envelope cartoon" class="bitEmoji" />
 			</div>
-			<p>The best way to get in touch with me is via email, but you can have a gander at my LinkedIn and GitHub profiles if you really want to.</p>	
+			<p>The best way to get in touch with me is via <a href="mailto:lily.boughton@hotmail.co.uk" target="_blank">email</a>, but you can have a gander at my <a href="https://www.linkedin.com/in/lily-boughton-29ab8b149/">LinkedIn</a> and <a href="https://github.com/lilyboughton" target="_blank">GitHub</a> profiles if you really want to.</p>
 			<div class="contactLinks">
 				<a href="mailto:lily.boughton@hotmail.co.uk" target="_blank"><i class="fas fa-envelope"></i></a>
 				<a href="https://www.linkedin.com/in/lily-boughton-29ab8b149/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
