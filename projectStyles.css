@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    letter-spacing: .075em;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* nav menu */
+nav {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: #0aa39c;
+    border-bottom: 3px solid #FFA500;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li+li:before {
+    padding: 2px;
+    color: #fbfbfb;
+    content: "/\00a0";
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+/* header section */
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: 30px;
+}
+
+header h2 {
+    font-family: "Courier New", sans-serif;
+    margin: 0;
+}
+
+/* about the project section */
+
+h4 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+article {
+    display: flex;
+}
+
+aside {
+    width: 1000px;
+    background-color: #0aa39c;
+    color: #fbfbfb;
+    border-radius: 2px;
+    font-family: "Courier New", sans-serif;
+    margin-left: 15px;
+}
+
+aside h5{
+    text-align: center;
+    padding:0;
+    margin-top:10px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+aside li::before {
+    content: "\2022";
+    font-weight:bold;
+    display:inline-block;
+    color: #FFA500;
+    font-size: 20px;
+    width: 1em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 700px) {
+
+    article {
+        flex-flow: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-left: 0;
+    }
+}

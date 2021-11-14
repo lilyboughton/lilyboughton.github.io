@@ -5,8 +5,6 @@
 body {
 	font-family: sans-serif;
 	letter-spacing: .075em;
-	position: fixed;
-	
 }
 
 /************** HEADER SECTION **************/
@@ -70,9 +68,9 @@ header a:hover{
 
 /************** NAV BAR **************/
 
-nav {
+#nav {
 	position: sticky;
-	top: 0px;
+	top: 0;
 	padding: 10px 15px;
 	display: flex;
 	justify-content: center;
@@ -80,14 +78,14 @@ nav {
 	border-bottom: 3px solid #FFA500;
 }
 
-nav a {
+#nav a {
 	text-decoration: none;
 	margin: 5px 50px;
 	color: #fbfbfb;
 	border: 3px solid #0aa39c;
 }
 
-nav a:hover{
+#nav a:hover{
 	border-bottom: 3px solid #fbfbfb;
 	transition: 0.5s;
 }
@@ -319,8 +317,19 @@ footer {
 
 
 @media screen and (max-width: 650px) {
+	header {
+		height: 300px;
+	}
+	header h1 {
+		font-size: 30px;
+	}
+
 	header h2 {
 		font-size: 14px;
+	}
+
+	header a {
+		display: none;
 	}
 	
 	@keyframes typing {
