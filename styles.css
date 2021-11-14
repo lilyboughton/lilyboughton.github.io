@@ -49,6 +49,10 @@ header a:hover {
   transition: 0.5s;
 }
 
+.hamburgerButtonOpen {
+  display: none;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -226,12 +230,26 @@ section.lightTheme {
   background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectSix.jpg");
 }
 
-#contact {
-  height: 1000px;
+.contactLinks {
+  display: flex;
+  justify-content: center;
+}
+.contactLinks i {
+  font-size: 80px;
+  padding: 20px;
 }
 
-.hamburgerButtonOpen {
-  display: none;
+#contact p {
+  text-align: center;
+}
+
+.flexMoji {
+  display: flex;
+  justify-content: center;
+}
+.flexMoji img {
+  height: 200px;
+  border-radius: 0;
 }
 
 @keyframes typing {

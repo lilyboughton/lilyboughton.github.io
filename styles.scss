@@ -63,6 +63,10 @@ header {
   }
 }
 
+.hamburgerButtonOpen {
+  display: none;
+}
+
 .nav {
   position: sticky;
   top: 0;
@@ -279,12 +283,30 @@ section.lightTheme {
   url("Images/projectSix.jpg");
 }
 
-#contact {
-  height: 1000px;
+.contactLinks {
+  display: flex;
+  justify-content: center;
+
+  i {
+    font-size: 80px;
+    padding: 20px;
+  }
 }
 
-.hamburgerButtonOpen {
-  display: none;
+#contact {
+  p {
+    text-align: center;
+  }
+}
+
+.flexMoji {
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 200px;
+    border-radius: 0;
+  }
 }
 
 //animations
