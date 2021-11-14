@@ -1,0 +1,70 @@
+$primaryColour: #0aa39c;
+$secondaryColour: #fbfbfb;
+$accentColour: #FFA500;
+$secondaryAccentColour: #808080;
+
+body {
+  font-family: Monaco, sans-serif;
+  //letter-spacing: .075em;
+}
+
+header {
+  background-color: $secondaryColour;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+  span {
+    color: $primaryColour;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 12px;
+    font-weight: 100;
+    color: $secondaryAccentColour;
+    overflow: hidden;
+    border-right: .15em solid $accentColour;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret 0.5s step-end infinite;
+  }
+
+  button {
+    font-size: 14px;
+    margin-top: 20px;
+    border: 3px $primaryColour solid;
+    border-radius: 3px;
+    padding: 10px;
+    text-decoration: none;
+    color: $primaryColour;
+    background-color: $secondaryColour;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primaryColour;
+      color: $secondaryColour;
+      transition: 0.5s;
+    }
+  }
+}
+
+
+//animations
+@keyframes typing {
+  from { width: 0 }
+  to { width: 320px }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $accentColour; }
+}
