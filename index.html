@@ -7,16 +7,51 @@
         <link rel="stylesheet" href="normalize.css" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css" type="text/css">
+        <script defer src="index.js"></script>
     </head>
 
     <body>
+        <nav class="nav">
+            <aside>
+                <button class="hamburgerButtonClosed"><i class="fa fa-bars"></i></button>
+                <button class="hamburgerButtonOpen"><i class="fas fa-times"></i></button>
+            </aside>
+            <div id="hamburgerMenu">
+                <a class="hamburgerLink" href="#about">About</a>
+                <a class="hamburgerLink" href="#portfolio">Portfolio</a>
+                <a class="hamburgerLink" href="#contact">Contact</a>
+            </div>
+        </nav>
         <header>
             <h1>Hello, I'm <span>Lily Boughton</span>.</h1>
             <h2>/* A newbie full stack developer */</h2>
-            <button href="#nav">Find out more ></button>
+            <a href="#about">Find out more ></a>
         </header>
-        <nav id="nav">
-
+        <nav class="desktopNav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+        <section id="about" class="darkTheme">
+            <h3> &ltabout&gt</h3>
+            <article>
+                <img src="Images/profilePic.jpg" alt="Image of me" class="profilePic"/>
+                <div>
+                    <h4>I'm a 'work in progress' hoping to learn the skills to make me an awesome programmer.</h4>
+                    <p>I'm Lily. I'm currently studying at <a href="https://io-academy.uk/" target="_blank">iO Academy</a> with the aim to launch a new career in the Coding Community. I've tried my hand at a few things in my working life so far, in each iteration trying to incorporate as much coding as possible!</p>
+                    <p>When I'm not bashing away on my keyboard, you can find me out walking my dog, Hendrix, getting creative at my sewing machine or hanging out with my 3-year-old nephew.</p>
+                </div>
+            </article>
+        </section>
+
+        </section>
+        <section id="portfolio">
+
+        </section>
+        <section id="contact">
+
+        </section>
     </body>
 </html>
