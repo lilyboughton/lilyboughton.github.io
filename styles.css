@@ -4,7 +4,7 @@ body {
 }
 
 html {
-  scroll-padding-top: 40px;
+  scroll-padding-top: 38px;
 }
 
 header {
@@ -144,8 +144,86 @@ section.darkTheme {
   color: #fbfbfb;
 }
 
-#portfolio {
-  height: 1000px;
+section.lightTheme {
+  background-color: #fbfbfb;
+  color: #000;
+}
+
+.portfolioProject {
+  width: 275px;
+  height: 200px;
+  margin: 10px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.portfolioProject h4 {
+  text-transform: uppercase;
+  font-family: "Courier New", sans-serif;
+  font-weight: 600;
+}
+
+.findOutMore {
+  background-color: #0aa39c;
+  border: 2px solid #0aa39c;
+  color: #fbfbfb;
+  border-radius: 3px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.findOutMore:hover {
+  background-color: #fbfbfb;
+  border: 2px solid #0aa39c;
+  color: #0aa39c;
+  transition: 0.5s;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.projectLinks div {
+  display: flex;
+}
+.projectLinks a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-flow: column wrap;
+}
+.projectLinks i {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.projectOne {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectOne.jpeg");
+}
+
+.projectTwo {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectTwo.jpg");
+}
+
+.projectThree {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectThree.jpg");
+}
+
+.projectFour {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectFour.jpg");
+}
+
+.projectFive {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectFive.jpg");
+}
+
+.projectSix {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.6)), url("Images/projectSix.jpg");
 }
 
 #contact {
@@ -173,6 +251,10 @@ section.darkTheme {
   }
 }
 @media screen and (min-width: 750px) {
+  html {
+    scroll-padding-top: 50px;
+  }
+
   header h1 {
     font-size: 40px;
   }
@@ -191,14 +273,20 @@ section.darkTheme {
     display: flex;
   }
 
-  section article {
+  .aboutMe {
     flex-flow: row;
   }
-  section article img {
+  .aboutMe img {
     padding: 30px;
   }
-  section article div {
+  .aboutMe div {
     padding: 30px;
+  }
+
+  .portfolio {
+    flex-flow: wrap;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   @keyframes typing {

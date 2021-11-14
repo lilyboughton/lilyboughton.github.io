@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  scroll-padding-top: 40px;
+  scroll-padding-top: 38px;
 }
 
 header {
@@ -171,8 +171,112 @@ section.darkTheme {
   color: $secondaryColour;
 }
 
-#portfolio {
-  height: 1000px;
+section.lightTheme {
+  background-color: $secondaryColour;
+  color: $mainFontColour;
+}
+
+.portfolioProject {
+  width: 275px;
+  height: 200px;
+  margin: 10px;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+  h4 {
+    text-transform: uppercase;
+    font-family: 'Courier New', sans-serif;
+    font-weight: 600;
+  }
+}
+
+.findOutMore {
+  background-color: $primaryColour;
+  border: 2px solid $primaryColour;
+  color: $secondaryColour;
+  border-radius: 3px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.findOutMore:hover{
+  background-color: $secondaryColour;
+  border: 2px solid $primaryColour;
+  color: $primaryColour;
+  transition: 0.5s;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+
+  div {
+    display: flex;
+  }
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: $mainFontColour;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  i {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+
+.projectOne{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectOne.jpeg");
+}
+
+.projectTwo{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectTwo.jpg");
+}
+.projectThree{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectThree.jpg");
+}
+
+.projectFour{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectFour.jpg");
+}
+
+.projectFive{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectFive.jpg");
+}
+.projectSix{
+  background-image: linear-gradient(
+                  rgba(251,251,251,0.6),
+                  rgba(251,251,251,0.6)
+  ),
+  url("Images/projectSix.jpg");
 }
 
 #contact {
@@ -196,6 +300,11 @@ section.darkTheme {
 
 //media queries
 @media screen and (min-width: 750px) {
+
+  html {
+    scroll-padding-top: 50px;
+  }
+
   header {
     h1 {
       font-size: 40px;
@@ -218,7 +327,7 @@ section.darkTheme {
     display: flex;
   }
 
-  section article {
+  .aboutMe {
     flex-flow: row;
 
     img {
@@ -227,6 +336,12 @@ section.darkTheme {
     div {
       padding: 30px;
     }
+  }
+
+  .portfolio {
+    flex-flow: wrap;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   @keyframes typing {
