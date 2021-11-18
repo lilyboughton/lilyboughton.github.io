@@ -84,6 +84,16 @@ header a:hover {
   border-bottom: 1px solid #808080;
   text-align: center;
 }
+.nav .projectHamburgerLink {
+  display: none;
+}
+.nav .projectHamburgerLinkHighlight {
+  color: #FFA500;
+}
+
+.portfolioHamburgerLink:hover {
+  cursor: pointer;
+}
 
 .desktopNav {
   display: none;

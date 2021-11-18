@@ -1,0 +1,103 @@
+$primaryColour: #0aa39c;
+$secondaryColour: #fbfbfb;
+$secondaryOpacity: rgba(251,251,251,0.9);
+$accentColour: #FFA500;
+$secondaryAccentColour: #808080;
+$mainFontColour: #000;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: .075em;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.hamburgerButtonOpen {
+  display: none;
+}
+
+.navMobile {
+  position: sticky;
+  top: 0;
+  background-color: $secondaryOpacity;
+  z-index: 1;
+
+  aside {
+    border-bottom: 1px solid $accentColour;
+  }
+
+  button {
+    padding: 10px;
+    color: $primaryColour;
+    background-color: transparent;
+    border: none
+  }
+
+  div {
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: $secondaryOpacity;
+
+    a {
+      width: 100%;
+      text-decoration: none;
+      padding: 10px;
+      color: $mainFontColour;
+      border-bottom: 1px solid $secondaryAccentColour;
+      text-align: center;
+    }
+  }
+  .projectHamburgerLink {
+    display: none;
+  }
+  .projectHamburgerLinkHighlight {
+    color: $accentColour;
+  }
+}
+
+
+.portfolioHamburgerLink:hover {
+  cursor: pointer;
+}
+
+/* nav menu */
+.desktopNav {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  background-color: $primaryColour;
+  border-bottom: 3px solid $accentColour;
+}
+
+.breadcrumb {
+  list-style: none;
+   li {
+     display: inline;
+
+     a {
+       text-decoration: none;
+       color: $secondaryColour;
+       &:hover {
+        color: $accentColour;
+       }
+     }
+   }
+
+  li+li:before {
+    padding: 2px;
+    color: $secondaryColour;
+    content: "/\00a0";
+  }
+}

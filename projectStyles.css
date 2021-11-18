@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 0.075em;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hamburgerButtonOpen {
+  display: none;
+}
+
+.navMobile {
+  position: sticky;
+  top: 0;
+  background-color: rgba(251, 251, 251, 0.9);
+  z-index: 1;
+}
+.navMobile aside {
+  border-bottom: 1px solid #FFA500;
+}
+.navMobile button {
+  padding: 10px;
+  color: #0aa39c;
+  background-color: transparent;
+  border: none;
+}
+.navMobile div {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.9);
+}
+.navMobile div a {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  border-bottom: 1px solid #808080;
+  text-align: center;
+}
+.navMobile .projectHamburgerLink {
+  display: none;
+}
+.navMobile .projectHamburgerLinkHighlight {
+  color: #FFA500;
+}
+
+.portfolioHamburgerLink:hover {
+  cursor: pointer;
+}
+
+/* nav menu */
+.desktopNav {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  background-color: #0aa39c;
+  border-bottom: 3px solid #FFA500;
+}
+
+.breadcrumb {
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: #fbfbfb;
+}
+.breadcrumb li a:hover {
+  color: #FFA500;
+}
+.breadcrumb li + li:before {
+  padding: 2px;
+  color: #fbfbfb;
+  content: "/ ";
+}
+
+/*# sourceMappingURL=projectStyles.css.map */

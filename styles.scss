@@ -101,6 +101,17 @@ header {
       text-align: center;
     }
   }
+  .projectHamburgerLink {
+    display: none;
+  }
+  .projectHamburgerLinkHighlight {
+    color: $accentColour;
+  }
+}
+
+
+.portfolioHamburgerLink:hover {
+  cursor: pointer;
 }
 
 .desktopNav {
