@@ -75,6 +75,8 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 
   h1 {
     margin-top: 30px;
@@ -83,6 +85,7 @@ header {
   h2 {
     font-family: "Courier New", sans-serif;
     margin: 0;
+    font-size: 18px;
   }
 }
 
@@ -137,11 +140,8 @@ section {
 @media screen and (min-width: 750px) {
 
   header {
-    width: 90%;
-    margin: 0 auto;
-
     h2 {
-      font-size: 16px;
+      font-size: 24px;
     }
   }
 
