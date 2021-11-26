@@ -113,62 +113,6 @@ header {
   cursor: pointer;
 }
 
-/*.portfolioLinkDesktop {
-  color: $secondaryColour;
-  &:hover {
-    background-color: $secondaryOpacity;
-    color: $primaryColour;
-  }
-}*/
-
-.navDropdown {
-  display: none;
-  position: absolute;
-  background-color: $secondaryOpacity;
-
-  ul {
-    flex-flow: column;
-    align-items: center;
-    a {
-      width: 100%;
-      text-decoration: none;
-      padding: 10px;
-      color: $mainFontColour;
-      border-bottom: 1px solid $secondaryAccentColour;
-      text-align: center;
-    }
-  }
-}
-
-.desktopNav {
-  display: none;
-  position: sticky;
-  top: 0;
-  background-color: $primaryColour;
-  border-bottom: $accentColour 3px solid;
-  z-index: 1;
-
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-  }
-
-  a {
-    color: $secondaryColour;
-    text-decoration: none;
-    padding: 15px 20px;
-    transition: 0.3s;
-  }
-
-  a:hover {
-    background-color: $secondaryOpacity;
-    color: $primaryColour;
-  }
-}
-
 section {
   position: relative;
   padding: 30px;
@@ -360,10 +304,6 @@ section.lightTheme {
 //media queries
 @media screen and (min-width: 750px) {
 
-  html {
-    scroll-padding-top: 50px;
-  }
-
   header {
     h1 {
       font-size: 40px;
@@ -376,14 +316,6 @@ section.lightTheme {
     a {
       font-size: 20px;
     }
-  }
-
-  .nav {
-    display:none;
-  }
-
-  .desktopNav {
-    display: flex;
   }
 
   .aboutMe {

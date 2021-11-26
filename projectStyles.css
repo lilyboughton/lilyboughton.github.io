@@ -6,11 +6,7 @@
 body {
   font-family: sans-serif;
   letter-spacing: 0.075em;
-}
-
-section {
-  width: 90%;
-  margin: 0 auto;
+  background-color: #fbfbfb;
 }
 
 .hamburgerButtonOpen {
@@ -20,15 +16,15 @@ section {
 .navMobile {
   position: sticky;
   top: 0;
-  background-color: rgba(251, 251, 251, 0.9);
+  background-color: #0aa39c;
   z-index: 1;
 }
 .navMobile aside {
-  border-bottom: 1px solid #FFA500;
+  border-bottom: 2px solid #FFA500;
 }
 .navMobile button {
   padding: 10px;
-  color: #0aa39c;
+  color: #fbfbfb;
   background-color: transparent;
   border: none;
 }
@@ -54,38 +50,74 @@ section {
 .navMobile .projectHamburgerLinkHighlight {
   color: #FFA500;
 }
-
-.portfolioHamburgerLink:hover {
+.navMobile .portfolioHamburgerLink:hover {
   cursor: pointer;
 }
 
-/* nav menu */
-.desktopNav {
-  display: none;
-  position: sticky;
-  top: 0;
-  padding: 10px 0;
-  background-color: #0aa39c;
-  border-bottom: 3px solid #FFA500;
+/* header section */
+header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin-top: 30px;
+}
+header h2 {
+  font-family: "Courier New", sans-serif;
+  margin: 0;
 }
 
-.breadcrumb {
+/* about the project section */
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+section h4 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+section article {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+}
+section aside {
+  width: 100%;
+  background-color: #0aa39c;
+  color: #fbfbfb;
+  border-radius: 2px;
+  font-family: "Courier New", sans-serif;
+}
+section aside h5 {
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+section aside ul {
   list-style: none;
+  padding: 0 20px;
 }
-.breadcrumb li {
-  display: inline;
-}
-.breadcrumb li a {
-  text-decoration: none;
-  color: #fbfbfb;
-}
-.breadcrumb li a:hover {
+section aside li::before {
+  content: "•";
+  font-weight: bold;
+  display: inline-block;
   color: #FFA500;
+  font-size: 20px;
+  width: 1em;
 }
-.breadcrumb li + li:before {
-  padding: 2px;
-  color: #fbfbfb;
-  content: "/ ";
+
+@media screen and (min-width: 750px) {
+  section article {
+    flex-flow: row;
+  }
+  section aside {
+    margin-left: 15px;
+    width: 615px;
+  }
 }
 
 /*# sourceMappingURL=projectStyles.css.map */
