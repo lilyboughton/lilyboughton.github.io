@@ -111,6 +111,14 @@ section aside li::before {
 }
 
 @media screen and (min-width: 750px) {
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+
   section article {
     flex-flow: row;
   }
