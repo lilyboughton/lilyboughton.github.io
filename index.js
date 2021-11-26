@@ -4,7 +4,7 @@ document.querySelector('.hamburgerButtonClosed').addEventListener('click', () =>
 
 document.querySelector('.hamburgerButtonOpen').addEventListener('click', () =>{
     closeHamburger()
-    closeProjectsMenu()
+    closeProjectsMenuMobile()
 })
 
 document.querySelectorAll('.hamburgerLink').forEach(link => {
@@ -14,7 +14,11 @@ document.querySelectorAll('.hamburgerLink').forEach(link => {
 })
 
 document.querySelector('.portfolioHamburgerLink').addEventListener('click', () =>{
-    openProjectsMenu()
+    openProjectsMenuMobile()
+})
+
+document.querySelector('.portfolioLinkDesktop').addEventListener('click', () => {
+    openProjectsMenuDesktop()
 })
 
 function openHamburger() {
@@ -29,16 +33,26 @@ function closeHamburger() {
     document.getElementById('hamburgerMenu').style.display='none';
 }
 
-function openProjectsMenu() {
+function openProjectsMenuMobile() {
     document.querySelector('.portfolioHamburgerLink').style.display = 'none';
     document.querySelectorAll('.projectHamburgerLink').forEach(link => {
         link.style.display = 'block';
     })
 }
 
-function closeProjectsMenu() {
+function closeProjectsMenuMobile() {
     document.querySelector('.portfolioHamburgerLink').style.display = 'block';
     document.querySelectorAll('.projectHamburgerLink').forEach(link => {
         link.style.display = 'none';
     })
+}
+
+function openProjectsMenuDesktop() {
+    document.querySelector('.portfolioLinkDesktop').style.display = 'none';
+    document.querySelector('.navDropdown').style.display = 'block';
+}
+
+function closeProjectsMenuDesktop() {
+    document.querySelector('.portfolioLinkDesktop').style.display = 'block';
+    document.querySelector('.navDropdown').style.display = 'none';
 }

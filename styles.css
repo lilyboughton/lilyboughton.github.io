@@ -95,6 +95,31 @@ header a:hover {
   cursor: pointer;
 }
 
+/*.portfolioLinkDesktop {
+  color: $secondaryColour;
+  &:hover {
+    background-color: $secondaryOpacity;
+    color: $primaryColour;
+  }
+}*/
+.navDropdown {
+  display: none;
+  position: absolute;
+  background-color: rgba(251, 251, 251, 0.9);
+}
+.navDropdown ul {
+  flex-flow: column;
+  align-items: center;
+}
+.navDropdown ul a {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  border-bottom: 1px solid #808080;
+  text-align: center;
+}
+
 .desktopNav {
   display: none;
   position: sticky;
@@ -267,7 +292,7 @@ section.lightTheme {
     width: 0;
   }
   to {
-    width: 246px;
+    width: 181px;
   }
 }
 @keyframes blink-caret {
@@ -322,7 +347,7 @@ section.lightTheme {
       width: 0;
     }
     to {
-      width: 530px;
+      width: 300px;
     }
   }
 }

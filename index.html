@@ -29,13 +29,19 @@
     </nav>
         <header id="home">
             <h1>Hello, I'm <span>Lily Boughton</span>.</h1>
-            <h2>/* A newbie full stack developer */</h2>
+            <h2>/* Full stack developer */</h2>
             <a href="#about">Find out more ></a>
         </header>
         <nav class="desktopNav">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li class="portfolioLinkDesktop">Portfolio</li>
+                <li class="navDropdown">
+                    <ul>
+                        <li class="projectLinkDesktop"><a href="#portfolio">Portfolio</a></li>
+                        <li class="projectLinkDesktop"><a href="projectOne.html">PHP Project</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,8 +50,10 @@
             <article class="aboutMe">
                 <img src="Images/profilePic.jpg" alt="Image of me" class="profilePic"/>
                 <div>
-                    <h4>I'm a 'work in progress' hoping to learn the skills to make me an awesome programmer.</h4>
-                    <p>I'm Lily. I'm currently studying at <a href="https://io-academy.uk/" target="_blank">iO Academy</a> with the aim to launch a new career in the Coding Community. I've tried my hand at a few things in my working life so far, in each iteration trying to incorporate as much coding as possible!</p>
+                    <h4>I'm currently a student at <a href="https://io-academy.uk/" target="_blank">iO Academy</a> learning the skills to make me a better programmer.</h4>
+                    <p>I'm Lily. I'm an enthusiastic full stack developer, with a particular interest in back-end technologies. I've spent the majority of my career so far
+                    trying to incorporate as much coding into my roles as possible (as Finance Manager it was a bit of a stretch, but I managed it!). At iO, I have
+                    formalised my learning in Software Development, and I'm excited to incorporate this in my next role.</p>
                     <p>When I'm not bashing away on my keyboard, you can find me out walking my dog, Hendrix, getting creative at my sewing machine or hanging out with my 3-year-old nephew.</p>
                 </div>
             </article>
@@ -60,7 +68,7 @@
                         <a href="projectOne.html" class="findOutMore">PHP Project ></a>
                         <div class="projectLinks">
                             <div>
-                                <a href="#">GitHub<i class="fab fa-github"></i></a>
+                                <a href="https://github.com/lilyboughton/lily-collection">GitHub<i class="fab fa-github"></i></a>
                             </div>
                             <div>
                                 <a href="#">Live<i class="fas fa-external-link-alt"></i></a>
