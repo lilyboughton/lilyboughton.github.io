@@ -91,48 +91,154 @@ header {
 
 /* about the project section */
 
-section {
-  width: 90%;
-  margin: 0 auto;
 
-  h4 {
-    margin-top: 40px;
-    margin-bottom: 0;
-  }
 
   article {
+    width: 90%;
+    margin: 10px auto;
     display: flex;
     flex-flow: column;
     align-content: center;
+
+    h4 {
+      display: none;
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    aside {
+      display: none;
+      flex-flow: column;
+      align-items: center;
+      margin-left: 40px;
+
+      div {
+        margin: 10px 0;
+      }
+
+      .techUsed {
+        width: 100%;
+        background-color: $secondaryColour;
+        color: $secondaryAccentColour;
+        border: 3px $accentColour solid;
+        border-radius: 2px;
+        font-family: "Courier New", sans-serif;
+        padding: 5px 0;
+        margin: 10px 0;
+
+        h5 {
+          text-align: center;
+          padding: 0;
+          margin-top: 10px;
+          margin-bottom: 0;
+          font-size: 18px;
+          color: $primaryColour;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0 20px;
+        }
+
+        li::before {
+          content: "\2022";
+          font-weight: bold;
+          display: inline-block;
+          color: $primaryColour;
+          font-size: 20px;
+          width: 1em;
+        }
+      }
+    }
   }
 
-  aside {
-    width: 100%;
-    background-color: #0aa39c;
-    color: #fbfbfb;
-    border-radius: 2px;
+
+.keyword {
+  color: $accentColour;
+}
+
+.projectHeaderImage {
+    width: 275px;
+    height: 250px;
+    margin-top: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#legoCollectionHeader {
+  background-image: url("Images/projects/legoCollection.png");
+}
+
+#legoCollectionAside {
+  display: none;
+  background-image: url("Images/projects/legoCollection.png");
+}
+
+#snakeSweeperHeader {
+  background-image: url("Images/projects/snakeSweeper.png");
+}
+
+#snakeSweeperAside {
+  display: none;
+  background-image: url("Images/projects/snakeSweeper.png");
+}
+
+#aptitudeTestHeader {
+  background-image: url("");
+}
+
+#aptitudeTestAside {
+  display: none;
+  background-image: url("");
+}
+
+#muppetsHeader {
+  background-image: url("Images/projects/muppets.png");
+}
+
+#muppetsAside {
+  display: none;
+  background-image: url("Images/projects/muppets.png");
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $primaryColour;
+  color: $secondaryColour;
+
+  h3 {
     font-family: "Courier New", sans-serif;
+    font-size: 16px;
+  }
 
-    h5 {
-      text-align: center;
-      padding: 0;
-      margin-top: 10px;
-      margin-bottom: 0;
-      font-size: 18px;
-    }
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
 
-    ul {
-      list-style: none;
-      padding: 0 20px;
-    }
+    div {
 
-    li::before {
-      content: "\2022";
-      font-weight: bold;
-      display: inline-block;
-      color: #FFA500;
-      font-size: 20px;
-      width: 1em;
+      i {
+        font-size: 30px;
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        padding-bottom: 10px;
+        color: $secondaryColour;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        &:hover {
+          color: $accentColour;
+        }
+      }
     }
   }
 }
@@ -145,14 +251,64 @@ section {
     }
   }
 
-  section {
-    article {
-      flex-flow: row;
+  article {
+    flex-flow: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 10px auto;
+
+    h4 {
+      display: block;
     }
+
     aside {
+      display: flex;
+    }
+
+    .techUsed {
       margin-left: 15px;
-      width: 615px;
+      min-width: 315px;
+      max-width: 500px;
+      max-height: 150px;
     }
   }
+
+
+  #legoCollectionHeader {
+    display: none;
+  }
+
+  #legoCollectionAside {
+    display: block;
+  }
+
+  #snakeSweeperHeader {
+    display: none;
+  }
+
+  #snakeSweeperAside {
+    display: block;
+  }
+
+  #aptitudeTestHeader {
+    display: none;
+  }
+
+  #aptitudeTestAside {
+    display: block;
+  }
+
+  #muppetsHeader {
+    display: none;
+  }
+
+  #muppetsAside {
+    display: block;
+  }
+
+  .keyword {
+    color: $mainFontColour;
+  }
+
 }
 

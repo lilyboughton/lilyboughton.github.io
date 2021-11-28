@@ -73,44 +73,138 @@ header h2 {
 }
 
 /* about the project section */
-section {
+article {
   width: 90%;
-  margin: 0 auto;
-}
-section h4 {
-  margin-top: 40px;
-  margin-bottom: 0;
-}
-section article {
+  margin: 10px auto;
   display: flex;
   flex-flow: column;
   align-content: center;
 }
-section aside {
+article h4 {
+  display: none;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+article aside {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  margin-left: 40px;
+}
+article aside div {
+  margin: 10px 0;
+}
+article aside .techUsed {
   width: 100%;
-  background-color: #0aa39c;
-  color: #fbfbfb;
+  background-color: #fbfbfb;
+  color: #808080;
+  border: 3px #FFA500 solid;
   border-radius: 2px;
   font-family: "Courier New", sans-serif;
+  padding: 5px 0;
+  margin: 10px 0;
 }
-section aside h5 {
+article aside .techUsed h5 {
   text-align: center;
   padding: 0;
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 18px;
+  color: #0aa39c;
 }
-section aside ul {
+article aside .techUsed ul {
   list-style: none;
   padding: 0 20px;
 }
-section aside li::before {
+article aside .techUsed li::before {
   content: "•";
   font-weight: bold;
   display: inline-block;
-  color: #FFA500;
+  color: #0aa39c;
   font-size: 20px;
   width: 1em;
+}
+
+.keyword {
+  color: #FFA500;
+}
+
+.projectHeaderImage {
+  width: 275px;
+  height: 250px;
+  margin-top: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#legoCollectionHeader {
+  background-image: url("Images/projects/legoCollection.png");
+}
+
+#legoCollectionAside {
+  display: none;
+  background-image: url("Images/projects/legoCollection.png");
+}
+
+#snakeSweeperHeader {
+  background-image: url("Images/projects/snakeSweeper.png");
+}
+
+#snakeSweeperAside {
+  display: none;
+  background-image: url("Images/projects/snakeSweeper.png");
+}
+
+#aptitudeTestHeader {
+  background-image: url("");
+}
+
+#aptitudeTestAside {
+  display: none;
+  background-image: url("");
+}
+
+#muppetsHeader {
+  background-image: url("Images/projects/muppets.png");
+}
+
+#muppetsAside {
+  display: none;
+  background-image: url("Images/projects/muppets.png");
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #0aa39c;
+  color: #fbfbfb;
+}
+footer h3 {
+  font-family: "Courier New", sans-serif;
+  font-size: 16px;
+}
+footer section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+footer section div i {
+  font-size: 30px;
+  padding: 10px;
+}
+footer section div a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: #fbfbfb;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+footer section div a:hover {
+  color: #FFA500;
 }
 
 @media screen and (min-width: 750px) {
@@ -118,12 +212,59 @@ section aside li::before {
     font-size: 24px;
   }
 
-  section article {
+  article {
     flex-flow: row;
+    align-items: center;
+    max-width: 800px;
+    margin: 10px auto;
   }
-  section aside {
+  article h4 {
+    display: block;
+  }
+  article aside {
+    display: flex;
+  }
+  article .techUsed {
     margin-left: 15px;
-    width: 615px;
+    min-width: 315px;
+    max-width: 500px;
+    max-height: 150px;
+  }
+
+  #legoCollectionHeader {
+    display: none;
+  }
+
+  #legoCollectionAside {
+    display: block;
+  }
+
+  #snakeSweeperHeader {
+    display: none;
+  }
+
+  #snakeSweeperAside {
+    display: block;
+  }
+
+  #aptitudeTestHeader {
+    display: none;
+  }
+
+  #aptitudeTestAside {
+    display: block;
+  }
+
+  #muppetsHeader {
+    display: none;
+  }
+
+  #muppetsAside {
+    display: block;
+  }
+
+  .keyword {
+    color: #000;
   }
 }
 

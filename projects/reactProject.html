@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>React Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="../Images/favicon.ico"/>
+    <link rel="stylesheet" href="../normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../projectStyles.css" type="text/css">
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="../index.js"></script>
+</head>
+<body>
+
+    <nav class="navMobile">
+        <aside>
+            <button class="hamburgerButtonClosed"><i class="fa fa-bars"></i></button>
+            <button class="hamburgerButtonOpen"><i class="fas fa-times"></i></button>
+        </aside>
+        <div id="hamburgerMenu">
+            <a class="hamburgerLink" href="../index.html#home">Home</a>
+            <a class="hamburgerLink" href="../index.html#about">About</a>
+            <a class="portfolioHamburgerLink">Portfolio</a>
+            <a class="projectHamburgerLink" href="../index.html#portfolio">Portfolio</a>
+            <a class="projectHamburgerLink projectHamburgerLinkHighlight" href="slimProject.html">Slim Project</a>
+            <a class="projectHamburgerLink projectHamburgerLinkHighlight" href="oopProject.html">OOP Project</a>
+            <a class="projectHamburgerLink projectHamburgerLinkHighlight" href="reactProject.html">React Project</a>
+            <a class="projectHamburgerLink projectHamburgerLinkHighlight" href="javascriptProject.html">JavaScript Project</a>
+            <a class="projectHamburgerLink projectHamburgerLinkHighlight" href="phpProject.html">PHP Project</a>
+            <a class="hamburgerLink" href="../index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>React Project</h1>
+        <h2>&ltbuild an aptitude test&gt</h2>
+        <div id="aptitudeTestHeader" class="projectHeaderImage"></div>
+    </header>
+
+    <article>
+        <div>
+            <h4>About the project</h4>
+            <p>
+                This project was a <span class="keyword">cross team</span> project where we worked on the same code base
+                at the same time as other Academy teams.
+            </p>
+            <p>
+                As with all the projects we completed on the course, this one was completed in
+                a four-day sprint, using <span class="keyword">GIT</span> for version control and having code peer
+                reviewed at the end of each task and trainer reviewed at the end of each story.
+            </p>
+            <p>
+                We built an Online Aptitude Test using <span class="keyword">React</span>. This involved accessing data
+                for the questions from an <span class="keyword">API</span> and then displaying them using a dynamic UI
+                made of <span class="keyword">reusable components</span>. We utilised <span class="keyword">useState()
+                </span> and <span class="keyword">props</span> to pass variables around the application and
+                <span class="keyword">useEffect()</span> to trigger functionality, usually when one of our state
+                variables had been updated. We created reusable components to ensure that the app would be scalable and
+                used <span class="keyword">Bootstrap</span> and <span class="keyword">SCSS</span> for styling.
+                I found the component-based approach of react satisfying to use.
+            </p>
+        </div>
+        <aside>
+            <div id="aptitudeTestAside" class="projectHeaderImage"></div>
+            <div class="techUsed">
+                <h5>&lttech used&gt</h5>
+                <ul>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                    <li>GIT for version control</li>
+                </ul>
+            </div>
+        </aside>
+    </article>
+
+    <footer>
+        <h3>&ltcheck out this project&gt</h3>
+        <section>
+            <div>
+                <a href="https://github.com/iO-Academy/aptitude-test-react  " target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i class="fas fa-external-link-alt"></i>
+                    Live
+                </a>
+            </div>
+        </section>
+    </footer>
+
+
+</body>
+</html>

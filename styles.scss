@@ -161,6 +161,12 @@ section.lightTheme {
   color: $mainFontColour;
 }
 
+#portfolio {
+  p {
+    text-align: center;
+  }
+}
+
 .portfolioProject {
   width: 275px;
   height: 200px;
