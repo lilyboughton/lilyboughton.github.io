@@ -202,6 +202,15 @@ header {
   background-image: url("Images/projects/muppets.png");
 }
 
+#toDoHeader {
+  background-image: url("Images/projects/toDo.png");
+}
+
+#toDoAside {
+  display: none;
+  background-image: url("Images/projects/toDo.png");
+}
+
 footer {
   padding: 20px;
   display: flex;
@@ -303,6 +312,14 @@ footer {
   }
 
   #muppetsAside {
+    display: block;
+  }
+
+  #toDoHeader {
+    display: none;
+  }
+
+  #toDoAside {
     display: block;
   }
 
