@@ -185,12 +185,12 @@ header {
 }
 
 #aptitudeTestHeader {
-  background-image: url("");
+  background-image: url("Images/projects/react.png");
 }
 
 #aptitudeTestAside {
   display: none;
-  background-image: url("");
+  background-image: url("Images/projects/react.png");
 }
 
 #muppetsHeader {
@@ -209,6 +209,15 @@ header {
 #toDoAside {
   display: none;
   background-image: url("Images/projects/toDo.png");
+}
+
+#nodeHeader {
+  background-image: url("Images/projects/node.png");
+}
+
+#nodeAside {
+  display: none;
+  background-image: url("Images/projects/node.png");
 }
 
 footer {
@@ -320,6 +329,14 @@ footer {
   }
 
   #toDoAside {
+    display: block;
+  }
+
+  #nodeHeader {
+    display: none;
+  }
+
+  #nodeAside {
     display: block;
   }
 
