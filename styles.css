@@ -60,7 +60,15 @@ header a:hover {
   z-index: 1;
 }
 .nav aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #FFA500;
+}
+.nav aside a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #0aa39c;
 }
 .nav button {
   padding: 10px;
@@ -135,6 +143,16 @@ section.darkTheme {
 section.lightTheme {
   background-color: #fbfbfb;
   color: #000;
+}
+
+.cvDownload {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.cvDownload a i {
+  font-size: 30px;
+  margin: 0 5px;
 }
 
 #portfolio p {
@@ -275,6 +293,13 @@ section.lightTheme {
   }
   .aboutMe div {
     padding: 30px;
+  }
+  .aboutMe .cvDownload {
+    padding: 0;
+    flex-flow: row;
+    /*      p {
+            width: 100%;
+          }*/
   }
 
   .portfolio {

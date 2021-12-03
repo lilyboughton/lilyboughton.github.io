@@ -74,7 +74,15 @@ header {
   z-index: 1;
 
   aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid $accentColour;
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: $primaryColour;
+    }
   }
 
   button {
@@ -159,6 +167,19 @@ section.darkTheme {
 section.lightTheme {
   background-color: $secondaryColour;
   color: $mainFontColour;
+}
+
+.cvDownload {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  a {
+    i {
+      font-size: 30px;
+      margin: 0 5px;
+    }
+  }
 }
 
 #portfolio {
@@ -332,6 +353,13 @@ section.lightTheme {
     }
     div {
       padding: 30px;
+    }
+    .cvDownload {
+      padding: 0;
+      flex-flow: row;
+/*      p {
+        width: 100%;
+      }*/
     }
   }
 
