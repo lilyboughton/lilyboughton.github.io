@@ -5,6 +5,7 @@ body {
 
 html {
   scroll-padding-top: 38px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -15,13 +16,20 @@ header {
   align-items: center;
   flex-flow: column wrap;
 }
-header span {
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  min-width: 260px;
+}
+header div span {
   color: #0aa39c;
 }
-header h1 {
+header div h1 {
   font-size: 20px;
 }
-header h2 {
+header div h2 {
   font-size: 12px;
   font-weight: 100;
   color: #808080;
@@ -30,25 +38,39 @@ header h2 {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
 }
 header a {
-  font-size: 14px;
   margin-top: 20px;
-  border: 2px #0aa39c solid;
-  border-radius: 3px;
   padding: 10px;
   text-decoration: none;
   color: #0aa39c;
-  background-color: #fbfbfb;
   cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  animation: wiggle 1s infinite;
+  display: inline-block;
 }
 header a:hover {
-  background-color: #0aa39c;
-  color: #fbfbfb;
+  animation: none;
+  color: #FFA500;
   transition: 0.5s;
 }
+header a i {
+  font-size: 20px;
+}
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
 .hamburgerButtonOpen {
   display: none;
 }
@@ -133,6 +155,8 @@ section article {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 section.darkTheme {
@@ -275,14 +299,14 @@ section.lightTheme {
   }
 }
 @media screen and (min-width: 750px) {
-  header h1 {
+  header div h1 {
     font-size: 40px;
   }
-  header h2 {
+  header div h2 {
     font-size: 20px;
   }
-  header a {
-    font-size: 20px;
+  header a i {
+    font-size: 30px;
   }
 
   .aboutMe {
@@ -297,9 +321,6 @@ section.lightTheme {
   .aboutMe .cvDownload {
     padding: 0;
     flex-flow: row;
-    /*      p {
-            width: 100%;
-          }*/
   }
 
   .portfolio {

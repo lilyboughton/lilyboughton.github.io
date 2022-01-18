@@ -12,6 +12,7 @@ body {
 
 html {
   scroll-padding-top: 38px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -22,45 +23,63 @@ header {
   align-items: center;
   flex-flow: column wrap;
 
-  span {
-    color: $primaryColour;
-  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    min-width: 260px;
 
-  h1 {
-    font-size: 20px;
-  }
+    span {
+      color: $primaryColour;
+    }
 
-  h2 {
-    font-size: 12px;
-    font-weight: 100;
-    color: $secondaryAccentColour;
-    overflow: hidden;
-    border-right: .15em solid $accentColour;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret 0.5s step-end infinite;
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 12px;
+      font-weight: 100;
+      color: $secondaryAccentColour;
+      overflow: hidden;
+      border-right: .15em solid $accentColour;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end),
+      blink-caret 1s step-end infinite;
+    }
   }
 
   a {
-    font-size: 14px;
     margin-top: 20px;
-    border: 2px $primaryColour solid;
-    border-radius: 3px;
     padding: 10px;
     text-decoration: none;
     color: $primaryColour;
-    background-color: $secondaryColour;
     cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    animation: wiggle 1s infinite;
+    display: inline-block;
 
     &:hover {
-      background-color: $primaryColour;
-      color: $secondaryColour;
+      animation: none;
+      color: $accentColour;
       transition: 0.5s;
     }
+
+    i {
+      font-size: 20px;
+    }
   }
+}
+
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
 }
 
 .hamburgerButtonOpen {
@@ -156,6 +175,8 @@ section {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
@@ -332,16 +353,20 @@ section.lightTheme {
 @media screen and (min-width: 750px) {
 
   header {
-    h1 {
-      font-size: 40px;
-    }
+    div {
+      h1 {
+        font-size: 40px;
+      }
 
-    h2 {
-      font-size: 20px;
+      h2 {
+        font-size: 20px;
+      }
     }
 
     a {
-      font-size: 20px;
+      i {
+        font-size: 30px;
+      }
     }
   }
 
@@ -357,9 +382,6 @@ section.lightTheme {
     .cvDownload {
       padding: 0;
       flex-flow: row;
-/*      p {
-        width: 100%;
-      }*/
     }
   }
 
