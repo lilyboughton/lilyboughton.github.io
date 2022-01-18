@@ -77,9 +77,9 @@ header {
 
 
 @keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  50% { transform: rotate(10deg); }
-  100% { transform: rotate(-10deg); }
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
 }
 
 .hamburgerButtonOpen {
@@ -374,17 +374,17 @@ section.lightTheme {
     flex-flow: row;
 
     img {
-      padding: 30px;
+      padding: 0 30px;
     }
     div {
-      padding: 30px;
-    }
-    .cvDownload {
-      padding: 0;
-      flex-flow: row;
+      padding: 0 30px;
     }
   }
 
+  .cvDownload {
+    padding: 0;
+    flex-flow: row;
+  }
   .portfolio {
     flex-flow: wrap;
     max-width: 900px;

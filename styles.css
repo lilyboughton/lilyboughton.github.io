@@ -62,13 +62,13 @@ header a i {
 
 @keyframes wiggle {
   0% {
-    transform: rotate(0deg);
-  }
-  50% {
     transform: rotate(10deg);
   }
-  100% {
+  50% {
     transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
   }
 }
 .hamburgerButtonOpen {
@@ -313,12 +313,13 @@ section.lightTheme {
     flex-flow: row;
   }
   .aboutMe img {
-    padding: 30px;
+    padding: 0 30px;
   }
   .aboutMe div {
-    padding: 30px;
+    padding: 0 30px;
   }
-  .aboutMe .cvDownload {
+
+  .cvDownload {
     padding: 0;
     flex-flow: row;
   }
