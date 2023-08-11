@@ -125,6 +125,10 @@ header a i {
   cursor: pointer;
 }
 
+.mainFontColour {
+  color: #000;
+}
+
 section {
   position: relative;
   padding: 30px;
