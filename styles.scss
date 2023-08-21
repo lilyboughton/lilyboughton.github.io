@@ -150,7 +150,6 @@ section {
 
   a {
     text-decoration: none;
-    color: $secondaryColour;
   }
 
   a:hover {
@@ -224,6 +223,14 @@ section.lightTheme {
     font-family: 'Courier New', sans-serif;
     font-weight: 600;
   }
+}
+
+.mainFontColour {
+  color: $mainFontColour;
+}
+
+.secondaryFontColour {
+  color:$secondaryColour;
 }
 
 .findOutMore {
